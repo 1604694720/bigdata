@@ -6,10 +6,6 @@ public class TestRecursion02 {
         System.out.println(test(3));
     }
     public static int test(int a) {
-        if(a==1){
-            return 500;
-        }else{
-            return test(a-1)*2-200;
-        }
+        return a==1?500:test(a-1)*2-200;
     }
 }
