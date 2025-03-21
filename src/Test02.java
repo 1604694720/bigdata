@@ -1,5 +1,5 @@
 import java.io.FileNotFoundException;
-
+//10转二进制的算法练习
 public class Test02 {
     public static void main(String[] args) {
         System.out.println(test(10));
