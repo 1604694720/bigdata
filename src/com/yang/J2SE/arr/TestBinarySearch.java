@@ -18,7 +18,6 @@ public class TestBinarySearch {
                 right=modil-1;
             }else if (key==arr[modil]){
                 index=modil;
-
                 break;
             }
         }
