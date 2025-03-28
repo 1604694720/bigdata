@@ -1,6 +1,6 @@
 package com.yang.J2SE.io.objectio;
 
-public class TestDog implements java.io.Serializable {
+public class TestDog implements java.io.Serializable,Comparable<TestDog> {
     String name;
     String color;
     int age;
@@ -19,5 +19,14 @@ public class TestDog implements java.io.Serializable {
                 ", color='" + color + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    @Override
+    public int compareTo(TestDog o) {
+        if (this.age>o.age){
+            return 1;
+        }else if (this.age<o.age){
+            return -1;
+        }else return 0;
     }
 }
