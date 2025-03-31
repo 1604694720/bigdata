@@ -7,6 +7,17 @@ import java.util.Arrays;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        String tre = "code102";
+        Father obj = new Son();
+        obj.get();
+    }
+}
+class Father{
+    public static void get(){
+        System.out.println("father");
+    }
+}
+class Son extends Father{
+    public static void get(){
+        System.out.println("son");
     }
 }
